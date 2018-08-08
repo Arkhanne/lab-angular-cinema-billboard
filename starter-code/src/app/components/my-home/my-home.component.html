@@ -1,6 +1,6 @@
 <ul>
   <li *ngFor="let movie of movies">
-    <a href="/movie/{{movie.id}}">
+    <a [routerLink]="['/movie', movie.id]">
       <p>
         ROOM {{movie.room}}
       </p>
